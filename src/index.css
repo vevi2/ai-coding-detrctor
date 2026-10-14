@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-primary: #002625;
+  --color-primary-container: #193c3a;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #83a6a3;
+  --color-primary-fixed: #c5eae6;
+  --color-primary-fixed-dim: #a9ceca;
+  --color-on-primary-fixed: #00201e;
+  --color-on-primary-fixed-variant: #2a4d4a;
+
+  --color-secondary: #106a61;
+  --color-secondary-container: #a3f1e5;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #1b7067;
+  --color-secondary-fixed: #a3f1e5;
+  --color-secondary-fixed-dim: #88d4c9;
+  --color-on-secondary-fixed: #00201d;
+  --color-on-secondary-fixed-variant: #005049;
+
+  --color-tertiary: #142422;
+  --color-tertiary-container: #293a37;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #91a49f;
+  --color-tertiary-fixed: #d4e7e2;
+  --color-tertiary-fixed-dim: #b8cac6;
+  --color-on-tertiary-fixed: #0e1e1c;
+  --color-on-tertiary-fixed-variant: #394a47;
+
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #d0dbed;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-variant: #d9e3f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e6eeff;
+  --color-surface-container-high: #dee9fc;
+  --color-surface-container-highest: #d9e3f6;
+  --color-on-surface: #121c2a;
+  --color-on-surface-variant: #414847;
+
+  --color-outline: #717977;
+  --color-outline-variant: #c1c8c7;
+  --color-background: #f8f9ff;
+  --color-on-background: #121c2a;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c8c7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #717977;
+}
